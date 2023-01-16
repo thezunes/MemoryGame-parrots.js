@@ -1,5 +1,36 @@
 iniciarjogo();
 
+// const objMetalparrot={
+//     nomeGif:"metalparrot",
+//     idImg:"metalparrot",
+//     transicaoCartaFront:'',
+//     transicaoCartaBack:'',
+//     numeroDaJogada:0
+// }
+// const objRevertitparrot={
+//     nomeGif:"revertitparrot",
+//     idImg:"revertitparrot",
+//     transicaoCartaFront:'',
+//     transicaoCartaBack:'',
+//     numeroDaJogada:
+// }
+// const objTripletsparrot={
+//     nomeGif:"tripletsparrot",
+//     idImg:"tripletsparrot",
+//     transicaoCartaFront:'',
+//     transicaoCartaBack:'',
+//     numeroDaJogada:0
+// }
+// const objUnicornparrot={
+//     nomeGif:"unicornparrot",
+//     idImg:"unicornparrot",
+//     transicaoCartaFront:'',
+//     transicaoCartaBack:'',
+//     numeroDaJogada:0
+// }
+
+const todasAsCartas=[objBobrossparrot,objExplodyparrot,objFiestaparrot,objMetalparrot,objRevertitparrot,objTripletsparrot,objUnicornparrot];
+
 function iniciarjogo() {
 
 let qntcartas = Number(prompt("Por favor, digite o número de cartas para iniciar o jogo"));
@@ -25,3 +56,5 @@ let qntcartas = Number(prompt("Por favor, digite o número de cartas para inicia
         }
       }
     }
+
+
