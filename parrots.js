@@ -78,13 +78,15 @@ s
         j++;
         cartas.push(Object.assign(novoObje,todasAsCartas[i]));
         cartas[j].idImg=`$cartas[j].idImg}.2;`.
-        j++
+        j++;
     }
     return cartas;
     
+}
 
-
-    }
+function comparador(){
+    return Math.random() - 0.5;
+}
 
 function iniciarjogo() {
 
