@@ -90,12 +90,12 @@ function adicionarCartas(){
     for (let i=0;i<cartas.length;i++){
         lista.innerHTML+=
     `<li>
-        <div id=${cartas[i].idImg} class="carta-parrot-front" onclick="verificarCarta(this)">
+        <div data-test="card" id=${cartas[i].idImg} class="carta-parrot-front" onclick="verificarCarta(this)">
             <div class="front-face face ${cartas[i].transicaoCartaFront}">
-                <img src="/imagens/front.png" alt="ilustração de um papagaio"/>
+                <img data-test="face-down-image" src="/imagens/front.png" alt="ilustração de um papagaio"/>
             </div>
             <div class="back-face face ${cartas[i].transicaoCartaBack}">
-                <img src="/gifs/${cartas[i].nomeGif}.gif" alt="gif de um papagaio"/>
+                <img data-test="face-up-image" src="/gifs/${cartas[i].nomeGif}.gif" alt="gif de um papagaio"/>
             </div>
         </div>         
     </li>` 
@@ -199,9 +199,9 @@ function finalizarJogo(){
         //setTimeout para permitir que a carta vire completamente!
         setTimeout(function(){
             alert(`Você ganhou em ${contadorJogadas} jogadas e ${tempo} segundos! 🏆`);
-            resposta=prompt("E aí, vamos jogar novamente 🤩? E se você usar mais cartas🎴? Que tal? Caso queira jogar, responda com sim (letras todas minúsculas). Caso não deseja jogar novamente, responda com não");
+            resposta=prompt("Deseja jogar novamente? Digite sim ou não");
             while(resposta!=="não" && resposta!=="sim"){
-                resposta=prompt("Não entendemos o que você digitou 😔. Caso queira jogar, responda com sim (letras todas minúsculas). Caso não deseja jogar novamente, responda com não (letras minúsculas e com ~)")
+                resposta=prompt("[ERRO]]Caso queira jogar, responda com sim (letras todas minúsculas). Caso não deseja jogar novamente, responda com não (letras minúsculas e com ~)")
             }
             if(resposta==="sim"){
                 lista.innerHTML+="";
