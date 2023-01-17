@@ -1,35 +1,90 @@
 iniciarjogo();
 
-// const objMetalparrot={
-//     nomeGif:"metalparrot",
-//     idImg:"metalparrot",
-//     transicaoCartaFront:'',
-//     transicaoCartaBack:'',
-//     numeroDaJogada:0
-// }
-// const objRevertitparrot={
-//     nomeGif:"revertitparrot",
-//     idImg:"revertitparrot",
-//     transicaoCartaFront:'',
-//     transicaoCartaBack:'',
-//     numeroDaJogada:
-// }
-// const objTripletsparrot={
-//     nomeGif:"tripletsparrot",
-//     idImg:"tripletsparrot",
-//     transicaoCartaFront:'',
-//     transicaoCartaBack:'',
-//     numeroDaJogada:0
-// }
-// const objUnicornparrot={
-//     nomeGif:"unicornparrot",
-//     idImg:"unicornparrot",
-//     transicaoCartaFront:'',
-//     transicaoCartaBack:'',
-//     numeroDaJogada:0
-// }
+const objBobrossparrot={
+    nomeGif:"bobrossparrot",
+    idImg:"bobrossparrot",
+    transicaoCartaFront:'',
+    transicaoCartaBack:'',
+    numeroDaJogada:0
+}
+const objExplodyparrot={
+    nomeGif:"explodyparrot",
+    idImg:"explodyparrot",
+    transicaoCartaFront:'',
+    transicaoCartaBack:'',
+    numeroDaJogada:0
+}
+const objFiestaparrot={
+    nomeGif:"fiestaparrot",
+    idImg:"fiestaparrot",
+    transicaoCartaFront:'',
+    transicaoCartaBack:'',
+    numeroDaJogada:0
+}
+const objMetalparrot={
+    nomeGif:"metalparrot",
+    idImg:"metalparrot",
+    transicaoCartaFront:'',
+    transicaoCartaBack:'',
+    numeroDaJogada:0
+}
+const objRevertitparrot={
+    nomeGif:"revertitparrot",
+    idImg:"revertitparrot",
+    transicaoCartaFront:'',
+    transicaoCartaBack:'',
+    numeroDaJogada:0
+}
+const objTripletsparrot={
+    nomeGif:"tripletsparrot",
+    idImg:"tripletsparrot",
+    transicaoCartaFront:'',
+    transicaoCartaBack:'',
+    numeroDaJogada:0
+}
+const objUnicornparrot={
+    nomeGif:"unicornparrot",
+    idImg:"unicornparrot",
+    transicaoCartaFront:'',
+    transicaoCartaBack:'',
+    numeroDaJogada:0
+} 
 
 const todasAsCartas=[objBobrossparrot,objExplodyparrot,objFiestaparrot,objMetalparrot,objRevertitparrot,objTripletsparrot,objUnicornparrot];
+
+function cartas(quantidade) {
+
+    let j=0;
+    const cartas=[];d
+s
+
+    let novoObje={
+
+        nomeGif:"",
+        idImg:"",
+        transicaoCartaFront:'',
+        transicaoCartaBack:'',
+        numeroDaJogada:0
+    }
+    for (let i=0;i<quantidade;i++){
+        novoObje={
+        nomeGif:"",
+        idImg:"",
+        transicaoCartaFront:'',
+        transicaoCartaBack:'',
+        numeroDaJogada:0}
+        
+        cartas.push(todasAsCartas[i]);
+        j++;
+        cartas.push(Object.assign(novoObje,todasAsCartas[i]));
+        cartas[j].idImg=`$cartas[j].idImg}.2;`.
+        j++
+    }
+    return cartas;
+    
+
+
+    }
 
 function iniciarjogo() {
 
